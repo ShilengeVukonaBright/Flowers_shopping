@@ -1,91 +1,39 @@
-*{
-    margin:0;
-    padding: 0;
-    font-family: 'Poppins';
-    box-sizing: border-box;
+:root {
+    --ink: #292620;
+    --muted: #716b63;
+    --cream: #fbf8f2;
+    --paper: #fffdf9;
+    --rose: #d97779;
+    --green: #475b47;
+    --line: #e9e2d8;
+    font-family: "DM Sans", sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    font-synthesis: none;
 }
-body{
-    background-image: url(/background/pngegg\ \(1\).png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-.signup-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-    
-
-}
-.signUp{
-    display: block;
-    backdrop-filter: blur(30px);
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 18px;
-    align-items: center;
-}
-input{
-    font-size: 1.2rem;
-}
-textarea{
-    width: 15rem;
-    height: 10rem;
-    font-size: 1.2rem;
-}
-#submit{
-    padding: 0.6rem;
-    background: black;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-radius: 7px;
-    cursor: pointer;
-}
-#submit:hover{
-    background-color: white;
-    color: black;
-    transition: .9s;
-}
-button{
-    padding: 0.6rem;
-    background: black;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-radius: 7px;
-    cursor: pointer;
-    box-shadow: 2px 5px 10px black;
-}
-button:hover{
-    background-color: white;
-
-    transition: .9s;
-}
-button a{
-    text-decoration: none;
-    color:white;
-
-}
-button a:hover{
-    color: black;
-}
-.fa-google{
-    font-size: 2rem;
-    cursor: pointer;
-    text-decoration: 3px underline red;
-    color: black;
-}
-p{
-    font-size: 1.8rem;
-    text-align: center;
-    margin: 1rem;
-
-}
-span{
-    color:blue;
-    text-decoration: 2px underline;
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+.signup-page { min-height: 100vh; padding: 2rem 1rem; display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+.brand { display: inline-flex; align-items: center; gap: .45rem; font-size: 1.05rem; font-weight: 700; letter-spacing: .12em; white-space: nowrap; }
+.brand > span:first-child { color: var(--rose); font-size: 1.6rem; }
+.brand > span:last-child { font-weight: 400; }
+.signup-card { width: min(100%, 540px); padding: clamp(1.3rem, 5vw, 2.5rem); background: var(--paper); border: 1px solid var(--line); border-radius: 5px; box-shadow: 0 15px 40px rgba(41, 38, 32, .06); }
+.eyebrow { margin: 0 0 .55rem; color: var(--green); font-size: .7rem; font-weight: 700; letter-spacing: .15em; }
+h1 { margin: 0; font: 500 clamp(2rem, 5vw, 2.8rem)/1.15 "Playfair Display", Georgia, serif; }
+.intro { margin: .6rem 0 1.5rem; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+.signup-form { display: grid; gap: .9rem; }
+.field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+.signup-form label { display: grid; gap: .4rem; color: var(--ink); font-size: .8rem; font-weight: 600; }
+.signup-form input { width: 100%; min-width: 0; padding: .8rem .85rem; border: 1px solid var(--line); border-radius: 3px; background: white; font-weight: 400; }
+.signup-form input:focus { outline: 2px solid rgba(71, 91, 71, .35); border-color: var(--green); }
+.optional { color: var(--muted); font-weight: 400; }
+.button { min-height: 48px; margin-top: .3rem; padding: .8rem 1rem; display: flex; align-items: center; justify-content: center; gap: .8rem; border: 0; border-radius: 3px; color: white; background: var(--green); font-weight: 600; cursor: pointer; }
+.button:hover { background: #334433; }
+.signup-status { margin: 0; padding: .7rem; color: var(--green); background: #e7eee2; font-size: .85rem; }
+.signin-link { margin: 1.3rem 0 0; color: var(--muted); text-align: center; font-size: .82rem; }
+.signin-link a { color: var(--green); font-weight: 700; text-decoration: underline; }
+@media (max-width: 450px) {
+    .field-grid { grid-template-columns: 1fr; }
 }

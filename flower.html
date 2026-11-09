@@ -3,109 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowers</title>
+    <meta name="description" content="Browse fresh flower bouquets at BRT Flowers.">
+    <title>Shop Flowers | BRT Flowers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="flowers.css">
-     <title>FLOWERS SHOP</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="query.css">
 </head>
 <body>
-    <h1>Welcome To BRT Flowers&Bouquet</h1>
-    <div class="cart">
-        <i class="fa-solid fa-cart-arrow-down"></i>
-        <button class="qantity">0</button>
-        <button class="Buy">Buy</button>
-        <button class="clear">Clear</button>
-    </div>
-    <h2>"A splash of color for your day, a breath of fresh air for your space"</h2>
-    <div class="search-bar">
-        <button id="search-btn">Search</button>
-        <input class="here" type="text"  id="text-input" placeholder="Search Here!!" >
+    <header class="shop-header">
+        <a class="brand" href="index.html"><span aria-hidden="true">✿</span> BRT <span>FLOWERS</span></a>
+        <a class="back-link" href="index.html">← Back to home</a>
+        <a class="cart-link" href="#cart" aria-label="Cart, 0 items">Your bag <span aria-hidden="true">♡</span> <b class="cart-count" aria-live="polite">0</b></a>
+    </header>
+    <main>
+        <section class="shop-intro">
+            <p class="eyebrow">THE BRT FLOWERS COLLECTION</p>
+            <h1>Find your happy.</h1>
+            <p>Thoughtful blooms for big celebrations, little surprises, and all the moments between.</p>
+            <label class="search-box">
+                <span aria-hidden="true">⌕</span>
+                <span class="sr-only">Search bouquets</span>
+                <input type="search" id="text-input" placeholder="Search our flowers..." autocomplete="off">
+            </label>
+            <p class="search-empty" hidden>No bouquets match that search. Try another flower.</p>
+        </section>
 
-        
-        
-    </div>
-    <div class="flowers-container">
-    <div class="flower1 fr">
-      <img src="/Products/pngegg (1).png" alt="">
-      <span>Tulip</span>
-      <button class="btn">$10</button>
-     
-    </div>
-     <div class="flower2 fr">
-        <img src="/Products/pngegg (2).png" alt="">
-        <span>Sunflower</span>
-        <button class="btn">$15</button>
-    </div>
-     <div class="flower3 fr">
-        <img src="/Products/pngegg (3).png" alt="">
-        <span>Lily</span>
-        <button class="btn">$20</button>
-    </div>
-     <div class="flower4 fr">
-        <img src="/Products/pngegg (4).png" alt="">
-        <span>Orchid</span>
-        <button class="btn">$25</button>
-    </div>
-     <div class="flower5 fr">
-        <img src="/Products/pngegg (5).png" alt="">
-        <span>Rose</span>
-        <button class="btn">$30</button>
-    </div>
-     <div class="flower6 fr">
-        <img src="/Products/pngegg (6).png" alt="">
-        <span>Daisy</span>
-        <button class="btn">$35</button>
-    </div>
-     <div class="flower7 fr">
-        <img src="/Products/pngegg (7).png" alt="">
-        <span>Lotus</span>
-        <button class="btn">$40</button>
-    </div>
-     <div class="flower8 fr">
-        <img src="/Products/pngegg (8).png" alt="">
-        <span>Marigold</span>
-        <button class="btn">$45</button>
-    </div>
-     <div class="flower9 fr">
-        <img src="/Products/pngegg (9).png" alt="">
-        <span>Lavender</span>
-        <button class="btn">$50</button>
-    </div>
-     <div class="flower10 fr">
-        <img src="/Products/pngegg (10).png" alt="">
-        <span>Hibiscus</span>
-        <button class="btn">$55</button>
-    </div>
-     <div class="flower11 fr">
-        <img src="/Products/pngegg (11).png" alt="">
-        <span>Jasmine</span>
-        <button class="btn">$60</button>
-    </div>
-     <div class="flower12 fr">
-        <img src="/Products/pngegg (12).png" alt="">
-        <span>Dahlia</span>
-        <button class="btn">$65</button>
-    </div>
-     <div class="flower13 fr">
-        <img src="/Products/pngegg (13).png" alt="">
-        <span>Carnation</span>
-        <button class="btn">$70</button>
-    </div>
-     <div class="flower14 fr">
-        <img src="/Products/pngegg (14).png" alt="">
-        <span>Cherry Blossom</span>
-        <button class="btn">$75</button>
-    </div>
-     <div class="flower15 fr">
-        <img src="/Products/pngegg (15).png" alt="">
-        <span>Peony</span>
-        <button class="btn">$80</button>
-    </div>
-
-</div>
+        <section class="products-section" aria-label="Bouquets">
+            <div class="products-heading"><h2>Our bouquets</h2><p>Hand-picked with love</p></div>
+            <div class="flowers-container">
+                <article class="product-card" data-name="Tulip"><div class="product-art art-pink" aria-hidden="true"><img src="/Products/pngegg (1).png " ></div><div class="product-info"><h3>Tulip</h3><p>Soft petals, sunny disposition.</p><div class="product-buy"><span>$10.00</span><button class="add-to-cart" type="button" data-id="tulip" data-name="Tulip" data-price="10">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Sunflower"><div class="product-art art-yellow" aria-hidden="true"><img src="/Products/pngegg (2).png" alt=""></div><div class="product-info"><h3>Sunflower</h3><p>A little sunshine, delivered.</p><div class="product-buy"><span>$15.00</span><button class="add-to-cart" type="button" data-id="sunflower" data-name="Sunflower" data-price="15">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Lily"><div class="product-art art-lilac" aria-hidden="true"><img src="/Products/pngegg (3).png" alt=""></div><div class="product-info"><h3>Lily</h3><p>Elegant blooms for any occasion.</p><div class="product-buy"><span>$20.00</span><button class="add-to-cart" type="button" data-id="lily" data-name="Lily" data-price="20">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Orchid"><div class="product-art art-peach" aria-hidden="true"><img src="/Products/pngegg (4).png" alt=""></div><div class="product-info"><h3>Orchid</h3><p>Graceful, delicate, unforgettable.</p><div class="product-buy"><span>$25.00</span><button class="add-to-cart" type="button" data-id="orchid" data-name="Orchid" data-price="25">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Rose"><div class="product-art art-rose" aria-hidden="true"><img src="/Products/pngegg (6).png" alt=""></div><div class="product-info"><h3>Rose</h3><p>A timeless way to say it.</p><div class="product-buy"><span>$30.00</span><button class="add-to-cart" type="button" data-id="rose" data-name="Rose" data-price="30">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Daisy"><div class="product-art art-yellow" aria-hidden="true"><img src="/Products/pngegg (7).png" alt=""></div><div class="product-info"><h3>Daisy</h3><p>Easy-going blooms, endless charm.</p><div class="product-buy"><span>$35.00</span><button class="add-to-cart" type="button" data-id="daisy" data-name="Daisy" data-price="35">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Lotus"><div class="product-art art-pink" aria-hidden="true"><img src="/Products/pngegg (8).png" alt=""></div><div class="product-info"><h3>Lotus</h3><p>A thoughtful touch of calm.</p><div class="product-buy"><span>$40.00</span><button class="add-to-cart" type="button" data-id="lotus" data-name="Lotus" data-price="40">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Marigold"><div class="product-art art-peach" aria-hidden="true"><img src="/Products/pngegg (9).png" alt=""></div><div class="product-info"><h3>Marigold</h3><p>Warm color for brighter days.</p><div class="product-buy"><span>$45.00</span><button class="add-to-cart" type="button" data-id="marigold" data-name="Marigold" data-price="45">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Lavender"><div class="product-art art-lilac" aria-hidden="true"><img src="/Products/pngegg (10).png" alt=""></div><div class="product-info"><h3>Lavender</h3><p>Gentle color, peaceful feeling.</p><div class="product-buy"><span>$50.00</span><button class="add-to-cart" type="button" data-id="lavender" data-name="Lavender" data-price="50">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Hibiscus"><div class="product-art art-rose" aria-hidden="true"><img src="/Products/pngegg (11).png" alt=""></div><div class="product-info"><h3>Hibiscus</h3><p>A bold bloom with a sunny spirit.</p><div class="product-buy"><span>$55.00</span><button class="add-to-cart" type="button" data-id="hibiscus" data-name="Hibiscus" data-price="55">Add to bag</button></div></article>
+                <article class="product-card" data-name="Jasmine"><div class="product-art art-pink" aria-hidden="true"><img src="/Products/pngegg (12).png" alt=""></div><div class="product-info"><h3>Jasmine</h3><p>Delicate blooms, lovely details.</p><div class="product-buy"><span>$60.00</span><button class="add-to-cart" type="button" data-id="jasmine" data-name="Jasmine" data-price="60">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Dahlia"><div class="product-art art-peach" aria-hidden="true"><img src="/Products/pngegg (13).png" alt=""></div><div class="product-info"><h3>Dahlia</h3><p>Full of character and color.</p><div class="product-buy"><span>$65.00</span><button class="add-to-cart" type="button" data-id="dahlia" data-name="Dahlia" data-price="65">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Carnation"><div class="product-art art-lilac" aria-hidden="true"><img src="Products/pngegg (14).png" alt=""></div><div class="product-info"><h3>Carnation</h3><p>A cheerful classic to share.</p><div class="product-buy"><span>$70.00</span><button class="add-to-cart" type="button" data-id="carnation" data-name="Carnation" data-price="70">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Cherry Blossom"><div class="product-art art-pink" aria-hidden="true"><img src="/Products/pngegg (15).png" alt=""></div><div class="product-info"><h3>Cherry Blossom</h3><p>Delicate beauty for a special day.</p><div class="product-buy"><span>$75.00</span><button class="add-to-cart" type="button" data-id="cherry-blossom" data-name="Cherry Blossom" data-price="75">Add to bag</button></div></div></article>
+                <article class="product-card" data-name="Peony"><div class="product-art art-rose" aria-hidden="true"><img src="/Products/pngegg (6).png" alt=""></div><div class="product-info"><h3>Peony</h3><p>Soft, lush petals that make a statement.</p><div class="product-buy"><span>$80.00</span><button class="add-to-cart" type="button" data-id="peony" data-name="Peony" data-price="80">Add to bag</button></div></div></article>
+            </div>
+        </section>
+    </main>
+    <aside class="cart-panel" id="cart" aria-label="Shopping bag">
+        <div><span class="cart-icon" aria-hidden="true">♡</span><span class="cart-summary">0 bouquets in your bag</span></div>
+        <div class="cart-actions"><button class="clear-cart" type="button">Clear bag</button><button class="checkout-button" type="button">Checkout <span aria-hidden="true">→</span></button></div>
+    </aside>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review your BRT Flowers order in our demo checkout.">
+    <title>Checkout | BRT Flowers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <header class="checkout-header">
+        <a class="brand" href="index.html"><span aria-hidden="true">✿</span> BRT <span>FLOWERS</span></a>
+        <a class="return-link" href="flower.html">← Continue shopping <span class="payment-cart-count">0</span></a>
+    </header>
+    <main class="checkout-layout">
+        <section class="checkout-main">
+            <p class="eyebrow">A FEW MORE DETAILS</p>
+            <h1>Checkout</h1>
+            <div class="demo-notice" role="note">
+                <strong>Demo checkout</strong>
+                <span>This site does not process payments. Do not enter real card or payment details.</span>
+            </div>
+            <form class="payment-form">
+                <fieldset>
+                    <legend>Contact details</legend>
+                    <div class="field-grid">
+                        <label>Full name<input name="name" type="text" autocomplete="name" placeholder="Your name" required></label>
+                        <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment method</legend>
+                    <p class="field-hint">Choose a demo option. No payment is collected.</p>
+                    <label class="payment-option"><input type="radio" name="payment-method" value="card" required><span><b>Card</b><small>Demo only — no card details requested</small></span><span class="option-icon" aria-hidden="true">▰</span></label>
+                    <label class="payment-option"><input type="radio" name="payment-method" value="wallet"><span><b>Digital wallet</b><small>Demo only — wallet is not connected</small></span><span class="option-icon" aria-hidden="true">◈</span></label>
+                    <label class="payment-option"><input type="radio" name="payment-method" value="delivery"><span><b>Pay on delivery</b><small>Demo selection only</small></span><span class="option-icon" aria-hidden="true">⌂</span></label>
+                </fieldset>
+                <button class="place-order" type="submit">Place demo order <span aria-hidden="true">→</span></button>
+                <p class="checkout-footnote">Your order is for demonstration only. No payment will be taken.</p>
+            </form>
+            <section class="payment-confirmation" tabindex="-1" aria-live="polite" hidden>
+                <span class="confirmation-icon" aria-hidden="true">✓</span>
+                <h2>Thanks for your demo order!</h2>
+                <p>No payment was taken and no order was sent to a store.</p>
+                <a class="return-button" href="flower.html">Back to bouquets</a>
+            </section>
+        </section>
+        <aside class="order-card" aria-label="Order summary">
+            <h2>Your order</h2>
+            <div class="order-items"></div>
+            <div class="order-total-row"><span>Total</span><strong class="order-total">$0.00</strong></div>
+            <p class="order-note">A lovely choice, whatever the occasion.</p>
+            <a href="flower.html">← Edit your bag</a>
+        </aside>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+</html>

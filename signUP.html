@@ -3,38 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signing UP....</title>
+    <meta name="description" content="Create a BRT Flowers account.">
+    <title>Create an Account | BRT Flowers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sign.css">
-    <link rel="stylesheet" href="query.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
-
-    <div class="signup-container">
-        
-
-    
-            <div class="signUp">
-                <p>Sign up with <span>google</span> <i class="fa-brands fa-google"></i></p>
-            <label for="Name">Name :</label>
-            <input type="text" name="Name" id="Name" placeholder="Enter your Name"><br><br>
-            <label for="Surname">Surname :</label>
-            <input type="text" name="text" id="Surname" placeholder="Enter your Surname"><br><br>
-            <label for="Password">New Password :</label>
-            <input type="password" name="Password id="Password" placeholder="Enter Password" max="10" minlength="4"><br><br>
-            <label for="Password">Confrim Password :</label>
-            <input type="password" name="Password id="Password" placeholder="Confrim Password" max="10" minlength="4"><br><br>
-            <label for="email">Email :</label>
-            <input type="email" name="Email" id="Email" placeholder="Enter your Email"><br><br>
-            <label for="Cellphone">CellPhone :</label>
-            <input type="number" name="CellPhone" id="CellPhone" placeholder="Enter your Phone Number"><br><br>
-         <textarea name="Address" id="Address" placeholder="Enter your Address" maxlength="100"></textarea><br><br>
-         <input type="submit" id="submit">
-         <button><a href="/index.html">Back</a></button>
-          </div>
-    </div>
-
-    
+    <main class="signup-page">
+        <a class="brand" href="index.html"><span aria-hidden="true">✿</span> BRT <span>FLOWERS</span></a>
+        <section class="signup-card">
+            <p class="eyebrow">WELCOME TO OUR STUDIO</p>
+            <h1>Create your account</h1>
+            <p class="intro">Join us for thoughtful flowers and lovely little surprises.</p>
+            <form class="signup-form">
+                <div class="field-grid">
+                    <label>First name<input name="first-name" type="text" autocomplete="given-name" placeholder="First name" required></label>
+                    <label>Last name<input name="last-name" type="text" autocomplete="family-name" placeholder="Last name" required></label>
+                </div>
+                <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+                <label>Phone number <span class="optional">(optional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="Your phone number"></label>
+                <label>Password<input id="signup-password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="At least 8 characters" required></label>
+                <label>Confirm password<input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" minlength="8" placeholder="Type your password again" required></label>
+                <button class="button" type="submit">Create demo account <span aria-hidden="true">→</span></button>
+                <p class="signup-status" role="status" hidden></p>
+            </form>
+            <p class="signin-link">Already have an account? <a href="index.html#sign-in">Sign in</a></p>
+        </section>
+    </main>
+    <script src="app.js" defer></script>
 </body>
 </html>
