@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/background/pngegg\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.signup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+
+}
+.signUp{
+    display: block;
+    backdrop-filter: blur(30px);
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 18px;
+    align-items: center;
+}
+input{
+    font-size: 1.2rem;
+}
+textarea{
+    width: 15rem;
+    height: 10rem;
+    font-size: 1.2rem;
+}
+#submit{
+    padding: 0.6rem;
+    background: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: white;
+    color: black;
+    transition: .9s;
+}
+button{
+    padding: 0.6rem;
+    background: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px black;
+}
+button:hover{
+    background-color: white;
+
+    transition: .9s;
+}
+button a{
+    text-decoration: none;
+    color:white;
+
+}
+button a:hover{
+    color: black;
+}
+.fa-google{
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: 3px underline red;
+    color: black;
+}
+p{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem;
+
+}
+span{
+    color:blue;
+    text-decoration: 2px underline;
+}

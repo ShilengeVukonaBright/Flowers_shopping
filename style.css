@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-image: url(/background/pngegg\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200vh;
+}
+
+nav{
+ backdrop-filter: blur(10px);
+}
+h1{
+    color: rgba(200,0,0, 1);
+    font-size:2.5rem;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: 3px underline; 
+    text-shadow: 2px 1px 3px black;
+    letter-spacing: 3px;
+}
+
+.main-container ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5rem;
+    padding-bottom: 2rem;
+    margin: 3rem;
+        
+}
+.main-container li a{
+
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: 2px solid rgba(200,0,0, 0.7);
+    text-decoration: none;
+    padding: 0.3rem;
+    border-radius: 10px;
+    background: black;
+    color: white;
+}
+.main-container li a:hover{
+    transition: .5s;
+    border: 2px solid black;
+    background:rgba(200,0,0, 0.4);
+    border: none;
+    color: black;
+
+}
+#About-container{
+    margin: 4rem;
+    padding: 2rem;
+}
+.about-heading{
+    text-align: center;
+    padding: 1rem;
+    text-decoration: 2px underline;
+    text-shadow: 2px 5px 10px black;
+    letter-spacing: 3px;
+}
+.about-p{
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    color: black;
+    font-size: 1.3rem;
+}
+.main-cc{
+    display: flex;
+    justify-content: center;
+
+}
+#sign-container{
+    backdrop-filter: blur(50px);
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 12px;
+}
+.sign-in{
+    text-align: center;
+    padding-bottom: 1.5rem;
+    letter-spacing: 3px;
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#submit{
+    align-self: center;
+    background: black;
+    color:blue;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    padding: 0.2rem;
+    box-shadow:2px 5px 5px black;
+}
+#submit:hover{
+    background: white;
+    border: 2px solid black;
+    color: black;
+    transition: .6s;
+    cursor: pointer;
+}
+label{
+    font-size: 1.3rem;
+}
+input{
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+.signUp-msg{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 0px 4px black;
+}
+section{
+    background: rgba(200,0,0, 0.7);
+    margin-top:4rem;
+}
+.heading h2{
+    text-align: center;
+    padding-top:4rem;
+    text-decoration:3px underline;
+    letter-spacing: 4px;
+    text-shadow: 5px 3px 6px black;
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+img{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#flowers-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    gap: 5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+h3{
+    border: 2px solid white;
+    padding: 0.5rem;
+    margin: 2rem;
+    box-shadow: 2px 5px 10px white;
+    font-size: 1.6rem;
+    background-color:black;
+    color: white;
+}
+.msg-p{
+    text-decoration: underline;
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    filter:drop-shadow(2px 5px 41px black) ;
+}
+h4{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.visit:hover{
+    scale:1.1;
+    transition: .9s;
+    color: white;
+}
+.visit a{
+    color:blue;
+}
+.visit a:hover{
+    color: white;
+}
+footer{
+    height:30vh;
+    margin:3rem;
+    
+}
+#contact-container h4{
+    font-size: 2rem;
+    text-decoration: 3px underline;
+    
+}
+.logo-container{
+    font-size: 3rem;
+    display: flex;
+    justify-content:space-around;
+    margin: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-whatsapp{
+    color: green;
+}
+.fa-linkedin{
+    color: rgb(23, 121, 124);
+}
+.copy{
+    background-color: black;
+}
+.copy p{
+    color: white;
+    text-align: center;
+}
+#sign-up-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+
+.signUp{
+    position: absolute;
+    display: none;
+
+}
+.parentUP:hover .signUp{
+    display: block;
+
+}
+html{
+    scroll-behavior:smooth;
+   
+}

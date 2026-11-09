@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins';
+}
+body{
+    background:linear-gradient(190deg,pink,#b92020);
+}
+img{
+    height: 15rem;
+}
+h1{
+    text-align: center;
+    font-weight: 300;
+    text-decoration: underline;
+    padding:1rem;
+}
+h2{
+    text-align:center;
+    padding:2rem;
+    background: linear-gradient(red,blue);
+    background-clip: text;
+    color: transparent;
+    font-weight: 300;
+    margin-top: 6rem;
+    
+
+}
+.flowers-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 2rem;
+    
+    
+
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+}
+.here{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:3px solid black;
+    outline: none;
+    
+}
+#search-btn{
+    background: black;
+    padding: 0.5rem;
+    margin-right: 0.3rem;
+    color:white;
+    font-weight: 500;
+
+}
+#search-btn:hover{
+    background: rgba(110,0,0, 1);
+    border-radius: 2px;
+    cursor:pointer;
+}
+
+
+.fr{
+    background:rgba(110,0,0, 0.4) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    color: aliceblue;
+}
+.fr:hover{
+    background: rgba(110,0,0, 1);
+    color:white;
+    cursor: pointer;
+}
+.btn{
+    padding: 0.7rem;
+    margin: 1rem;
+    cursor: pointer;
+    background:rgba(0,0,0, 1);
+    color: white;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+}
+.btn:hover{
+    background: rgba(0,0,110, 0.6);
+    border-color: white;
+}
+span{
+    font-size: 2rem;
+}
+img{
+    filter:drop-shadow(4px 10px 15px black);
+}
+.cart{
+    display: inline-block;
+    position: fixed;
+    background: rgba(0,0,0, 1);
+     right: 0;
+    margin: 5rem;
+    top: 0;
+    padding: 0.2rem;
+    margin-top: 5rem;
+    z-index: 100;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+.fa-cart-arrow-down{
+    font-size: 2rem;
+    align-self: center;
+    color:white;    
+
+}
+.qantity{
+    padding: 0.4rem;
+    font-weight: bold;
+    border:1px solid wheat;
+    border-radius: 1px;
+    background:rgba(0,0,0, 0.1);
+    color: white;
+    margin: 0.1rem;
+    cursor: pointer;
+
+}
+.Buy , .clear{
+      background: rgba(0,0,110, 0.8);
+      color: white;
+      padding: 0.2rem;
+      border: 1px solid white;
+}
+.Buy:hover , .clear:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+    border:1px solid red;
+
+}
